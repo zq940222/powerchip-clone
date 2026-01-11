@@ -11,11 +11,11 @@ interface HomePageProps {
 
 export default function HomePage({ params: { locale } }: HomePageProps) {
   const services = [
-    { icon: 'memory', name: locale === 'zh-TW' ? '晶圓代工服務' : 'Foundry Services', href: '/technology/foundry' },
-    { icon: 'architecture', name: locale === 'zh-TW' ? '設計服務' : 'Design Services', href: '/technology/design' },
-    { icon: 'build', name: locale === 'zh-TW' ? '檢修服務' : 'Overhaul Service', href: '/technology' },
-    { icon: 'precision_manufacturing', name: locale === 'zh-TW' ? '製造' : 'Manufacturing', href: '/technology/manufacturing' },
-    { icon: 'biotech', name: locale === 'zh-TW' ? '晶圓測試' : 'Wafer Testing', href: '/technology' },
+    { icon: 'memory', name: locale === 'zh-TW' ? '晶圓代工服務' : 'Foundry Services', href: '/services/foundry' },
+    { icon: 'architecture', name: locale === 'zh-TW' ? '設計服務' : 'Design Services', href: '/services/design' },
+    { icon: 'build', name: locale === 'zh-TW' ? '檢修服務' : 'Overhaul Services', href: '/services/overhaul' },
+    { icon: 'precision_manufacturing', name: locale === 'zh-TW' ? '製造服務' : 'Manufacturing', href: '/services/manufacturing' },
+    { icon: 'biotech', name: locale === 'zh-TW' ? '記憶體測試' : 'Memory Testing', href: '/services/memory-testing' },
   ]
 
   // Mock news since this is now a Client Component for premium animations
@@ -164,9 +164,9 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
                     ? '建立高效管理團隊；為客戶提供優質產品和服務，提升人們的生活品質，創造股東價值。'
                     : 'Establish efficient management teams; provide customers with quality products and services to improve people\'s quality of life and create shareholder value.'}
                 </p>
-                <Link href={`/${locale}/investor`}>
+                <Link href={`/${locale}/investors`}>
                   <button className="bg-psmc-cyan text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:bg-psmc-navy transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-psmc-cyan focus:ring-offset-2 group flex items-center gap-4">
-                    {locale === 'zh-TW' ? '了解更多' : 'Learn More History'}
+                    {locale === 'zh-TW' ? '了解更多' : 'Learn More'}
                     <span className="group-hover:translate-x-2 transition-transform">→</span>
                   </button>
                 </Link>
@@ -237,7 +237,7 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
               <span className="text-psmc-cyan text-xs font-black tracking-[0.4em] uppercase mb-4 block">Insights</span>
               <h2 className="text-4xl md:text-6xl font-bold text-psmc-navy tracking-tighter">Latest Updates</h2>
             </div>
-            <Link href={`/${locale}/news`} className="group flex items-center gap-3 text-psmc-navy font-bold uppercase tracking-widest text-xs border-b-2 border-psmc-cyan pb-2 hover:text-psmc-cyan transition-colors">
+            <Link href={`/${locale}/insights`} className="group flex items-center gap-3 text-psmc-navy font-bold uppercase tracking-widest text-xs border-b-2 border-psmc-cyan pb-2 hover:text-psmc-cyan transition-colors">
               Read All Insights
               <span className="group-hover:translate-x-1 transition-transform">→</span>
             </Link>
@@ -252,7 +252,7 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Link href={`/${locale}/news/${item.id}`} className="group block bg-white rounded-[32px] p-10 shadow-xl hover:shadow-2xl transition-all h-full border border-slate-100 flex flex-col">
+                <Link href={`/${locale}/insights/press/${item.id}`} className="group block bg-white rounded-[32px] p-10 shadow-xl hover:shadow-2xl transition-all h-full border border-slate-100 flex flex-col">
                   <div className="flex items-center gap-3 mb-8">
                     <span className="w-1 h-6 bg-psmc-cyan rounded-full" />
                     <span className="text-xs font-black text-psmc-cyan uppercase tracking-widest">

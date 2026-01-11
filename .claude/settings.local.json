@@ -13,7 +13,12 @@
       "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"service b2b corporate\" --domain color -n 3)",
       "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"feature showcase corporate\" --domain landing -n 3)",
       "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"responsive layout\" --stack html-tailwind -n 3)",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "Bash(curl -L -s \"https://www.powerchip.com\")",
+      "Bash(xargs ls -la)",
+      "Bash(ls -la e:/ProjectCode/powerchip-clone/src/app/[locale]/)",
+      "Bash(ls -la e:/ProjectCode/powerchip-clone/src/app/[locale]/technology/)",
+      "Bash(find e:/ProjectCode/powerchip-clone/src/app/[locale]/ -name \"page.tsx\")"
     ]
   }
 }
