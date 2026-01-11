@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground-rgb: 2, 6, 23;
+    --background-start-rgb: 248, 250, 252;
+    --background-end-rgb: 248, 250, 252;
+    --font-poppins: 'Poppins', 'Noto Sans TC', sans-serif;
+    --font-open-sans: 'Open Sans', 'Noto Sans TC', sans-serif;
+    --font-noto-sans-tc: 'Noto Sans TC', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-start-rgb));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-psmc-cyan text-white px-8 py-3 rounded-xl font-bold uppercase tracking-wider hover:bg-psmc-navy transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-psmc-cyan focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-psmc-navy text-white px-8 py-3 rounded-xl font-bold uppercase tracking-wider hover:bg-psmc-cyan transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-psmc-navy focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-psmc-cyan text-psmc-cyan px-8 py-3 rounded-xl font-bold uppercase tracking-wider hover:bg-psmc-cyan hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-psmc-cyan focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-psmc-navy mb-6 tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-slate-600 mb-10 leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-nav {
+    @apply bg-psmc-navy/80 backdrop-blur-md border-b border-white/10;
+  }
+
+  .admin-input {
+    @apply w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-psmc-navy placeholder:text-slate-300 focus:ring-2 focus:ring-psmc-cyan transition-all outline-none font-bold;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

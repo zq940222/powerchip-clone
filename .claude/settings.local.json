@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn db:seed)",
+      "Bash(npm install -g uipro-cli)",
+      "Bash(uipro init --ai claude)",
+      "Bash(curl -s https://www.powerchip.com)",
+      "Bash(curl -s https://www.powerchip.com/en-global)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"semiconductor technology corporate professional\" --domain product -n 5)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"corporate professional clean modern technology\" --domain style -n 5)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"professional corporate technology\" --domain typography -n 3)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"minimalism professional clean\" --domain style -n 3)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"service b2b corporate\" --domain color -n 3)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"feature showcase corporate\" --domain landing -n 3)",
+      "Bash(python .claude/skills/ui-ux-pro-max/scripts/search.py \"responsive layout\" --stack html-tailwind -n 3)",
+      "Bash(npm run dev)"
+    ]
+  }
+}

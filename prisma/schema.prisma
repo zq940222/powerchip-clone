@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(EDITOR)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  news      News[]
+}
+
+model NewsCategory {
+  id        Int      @id @default(autoincrement())
+  nameZh    String   @map("name_zh")
+  nameEn    String   @map("name_en")
+  slug      String   @unique
+  createdAt DateTime @default(now())
+  news      News[]
+
+  @@map("news_categories")
+}
+
+model News {
+  id          Int           @id @default(autoincrement())
+  titleZh     String        @map("title_zh")
+  titleEn     String        @map("title_en")
+  contentZh   String        @db.Text @map("content_zh")
+  contentEn   String        @db.Text @map("content_en")
+  excerptZh   String?       @map("excerpt_zh")
+  excerptEn   String?       @map("excerpt_en")
+  coverImage  String?       @map("cover_image")
+  published   Boolean       @default(false)
+  publishedAt DateTime?     @map("published_at")
+  category    NewsCategory? @relation(fields: [categoryId], references: [id])
+  categoryId  Int?          @map("category_id")
+  author      User          @relation(fields: [authorId], references: [id])
+  authorId    Int           @map("author_id")
+  createdAt   DateTime      @default(now()) @map("created_at")
+  updatedAt   DateTime      @updatedAt @map("updated_at")
+
+  @@map("news")
+}
+
+model PageContent {
+  id        Int      @id @default(autoincrement())
+  pageKey   String   @unique @map("page_key")
+  titleZh   String   @map("title_zh")
+  titleEn   String   @map("title_en")
+  contentZh String   @db.Text @map("content_zh")
+  contentEn String   @db.Text @map("content_en")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("page_contents")
+}

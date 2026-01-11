@@ -1,0 +1,128 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About PSMC",
+    "aboutCompany": "Company Profile",
+    "history": "Milestones",
+    "team": "Management Team",
+    "quality": "Quality System",
+    "technology": "Technology & Services",
+    "foundry": "Foundry Technology",
+    "design": "Design Services",
+    "manufacturing": "Manufacturing Services",
+    "investor": "Investor Relations",
+    "governance": "Corporate Governance",
+    "financial": "Financial Information",
+    "news": "News Center",
+    "contact": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "search": "Search",
+    "language": "Language",
+    "copyright": "Copyright",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional Foundry Services",
+      "subtitle": "Innovation Technology, Excellent Quality",
+      "cta": "Learn More"
+    },
+    "about": {
+      "title": "About PSMC",
+      "description": "Powerchip Semiconductor Manufacturing Corporation is committed to providing world-class foundry services with innovative technology, excellent quality, and superior service to meet customer needs."
+    },
+    "services": {
+      "title": "Technology & Services",
+      "foundry": {
+        "title": "Foundry Technology",
+        "description": "Advanced wafer foundry process technology"
+      },
+      "design": {
+        "title": "Design Services",
+        "description": "Complete design support and IP solutions"
+      },
+      "manufacturing": {
+        "title": "Manufacturing Services",
+        "description": "High-quality wafer manufacturing services"
+      }
+    },
+    "news": {
+      "title": "Latest News",
+      "noNews": "No news available"
+    }
+  },
+  "about": {
+    "title": "About PSMC",
+    "intro": "Powerchip Semiconductor Manufacturing Corporation (PSMC) is Taiwan's leading wafer foundry, with advanced process technology and rich manufacturing experience.",
+    "vision": {
+      "title": "Vision",
+      "content": "To become a world-leading professional wafer foundry"
+    },
+    "mission": {
+      "title": "Mission",
+      "content": "To meet customer needs with innovative technology, excellent quality, and superior service"
+    },
+    "values": {
+      "title": "Core Values",
+      "integrity": "Integrity",
+      "service": "Service",
+      "quality": "Quality",
+      "innovation": "Innovation"
+    }
+  },
+  "news": {
+    "title": "News Center",
+    "categories": {
+      "all": "All",
+      "company": "Company News",
+      "product": "Product News",
+      "event": "Event News"
+    },
+    "publishedAt": "Published on",
+    "back": "Back to News List"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "address": "No. 12, Li-Hsin 1st Rd., Hsinchu Science Park, Taiwan"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "news": "News Management",
+    "addNews": "Add News",
+    "editNews": "Edit News",
+    "logout": "Logout",
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "title": "Title",
+    "content": "Content",
+    "excerpt": "Excerpt",
+    "category": "Category",
+    "coverImage": "Cover Image",
+    "publish": "Publish",
+    "saveDraft": "Save Draft",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "actions": "Actions",
+    "status": "Status",
+    "published": "Published",
+    "draft": "Draft"
+  }
+}
