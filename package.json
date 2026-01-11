@@ -2,10 +2,14 @@
   "name": "powerchip-clone",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=16.20.0 <17.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3000",
     "lint": "next lint",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
@@ -15,7 +19,7 @@
     "@prisma/client": "^5.7.1",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.0.0",
-    "framer-motion": "^12.25.0",
+    "framer-motion": "^10.18.0",
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
     "next-intl": "^3.4.0",
